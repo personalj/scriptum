@@ -1,0 +1,20 @@
+#contact.contact.fadeIn
+	.container
+		.section-title
+			| Contact us
+		.contact__form
+			form(action="send.php" method="post")#form.contact__form-tag
+				.contact__form-row.contact__form-row_double
+					input(type="text" name="name" placeholder="*Name" required).contact__form-input
+					input(type="text" name="surname" placeholder="*surname" required).contact__form-input
+				.contact__form-row
+					input(type="text" name="email" placeholder="*email" required).contact__form-input
+				.contact__form-row
+					textarea(placeholder="message").contact__form-textarea
+				input(type="submit" name="send" value="send").contact__form-submit
+			.contact__pop-up-wrap
+				.contact__pop-up
+					.contact__pop-up-title
+						| Your message has been sent
+					.contact__pop-up-btn
+						| ok

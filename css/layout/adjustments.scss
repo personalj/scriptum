@@ -1,0 +1,107 @@
+* {
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$primary-color: #1a2631;
+$gray-color: #6c6c6c;
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: 'BaronNeue';
+	font-size: 100%;
+	color: $primary-color;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 35px;
+	background: #f3f3f3;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1270px;
+}
+a {
+	text-decoration: none;
+
+}
+li {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+	font-weight: normal;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	border: 0;
+}
+input, textarea  {   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+.section-title {
+	font-size: 2.8125rem;
+	margin-bottom: 45px;
+	text-shadow: 1px 1px 0 rgba(190, 190, 190, 0.1), 2px 2px 0 rgba(190, 190, 190, 0.1), 3px 3px 0 rgba(190, 190, 190, 0.1), 4px 4px 0 rgba(190, 190, 190, 0.1), 5px 5px 0 rgba(190, 190, 190, 0.2);
+	letter-spacing: 2px;
+}
+
+%clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+@mixin section-background {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+0,f9f9f9+50,ffffff+100 */
+	background: #f3f3f3; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f3f3f3 0%, #f9f9f9 50%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #f3f3f3 0%,#f9f9f9 50%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #f3f3f3 0%,#f9f9f9 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.hide{
+	opacity:0;
+}
+.visible{
+	opacity:1;
+}

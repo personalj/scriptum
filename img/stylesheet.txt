@@ -1,0 +1,113 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow {
+    width: 13px;
+    height: 7px;
+    background-position: -7px -7px;
+}
+
+.sprite-burger {
+    width: 30px;
+    height: 12px;
+    background-position: -34px -7px;
+}
+
+.sprite-calendar {
+    width: 13px;
+    height: 13px;
+    background-position: -78px -7px;
+}
+
+.sprite-icon_be {
+    width: 17px;
+    height: 11px;
+    background-position: -105px -7px;
+}
+
+.sprite-icon_compass {
+    width: 81px;
+    height: 81px;
+    background-position: -136px -7px;
+}
+
+.sprite-icon_cup {
+    width: 40px;
+    height: 45px;
+    background-position: -7px -102px;
+}
+
+.sprite-icon_design {
+    width: 68px;
+    height: 68px;
+    background-position: -61px -102px;
+}
+
+.sprite-icon_engen {
+    width: 78px;
+    height: 77px;
+    background-position: -143px -102px;
+}
+
+.sprite-icon_eye {
+    width: 47px;
+    height: 35px;
+    background-position: -7px -193px;
+}
+
+.sprite-icon_fb {
+    width: 9px;
+    height: 17px;
+    background-position: -231px -7px;
+}
+
+.sprite-icon_mount {
+    width: 39px;
+    height: 38px;
+    background-position: -68px -193px;
+}
+
+.sprite-icon_night {
+    width: 77px;
+    height: 77px;
+    background-position: -254px -7px;
+}
+
+.sprite-icon_phone {
+    width: 27px;
+    height: 45px;
+    background-position: -235px -98px;
+}
+
+.sprite-icon_safety {
+    width: 77px;
+    height: 77px;
+    background-position: -235px -157px;
+}
+
+.sprite-icon_send {
+    width: 77px;
+    height: 77px;
+    background-position: -7px -248px;
+}
+
+.sprite-icon_tw {
+    width: 17px;
+    height: 13px;
+    background-position: -276px -98px;
+}
+
+.sprite-pencil {
+    width: 15px;
+    height: 13px;
+    background-position: -307px -98px;
+}
+
+.sprite-quotes {
+    width: 29px;
+    height: 21px;
+    background-position: -98px -248px;
+}

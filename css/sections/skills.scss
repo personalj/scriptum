@@ -1,0 +1,64 @@
+.skills {
+	@include section-background;
+	padding: 117px 0;
+	.section-title {
+		text-align: center;
+		margin-bottom: 74px;
+	}
+	&__title {
+		display: inline-block;
+		font-size: .8375rem;
+		letter-spacing: 2px;
+		margin-bottom: 35px;
+		text-shadow: 1px 1px 0 rgba(190, 190, 190, 0.1), 2px 2px 0 rgba(190, 190, 190, 0.1), 3px 3px 0 rgba(190, 190, 190, 0.1), 4px 4px 0 rgba(190, 190, 190, 0.1), 5px 5px 0 rgba(190, 190, 190, 0.2);
+	}
+	&__row {
+		margin-bottom: 46px;
+	}
+}
+.progress-bar {
+	height: 33px;
+	background: #f3f3f3;
+	position: relative;
+	&__inner {
+		position: absolute;
+		height: 100%;
+		background: $primary-color;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		&_design {
+			width: 95%;
+		}
+		&_css {
+			width: 85%;
+		}
+		&_javascript {
+			width: 80%;
+		}
+		.progress-bar__percentage {
+			font-size: .875rem;
+			color: #ffffff;
+			position: absolute;
+			top: 8px;
+			right: 15px;
+		}
+	}
+}
+.progress-bar__inner_design, .progress-bar__inner_css, .progress-bar__inner_javascript {
+	width: 0%;
+	opacity: 0;
+	transition: cubic-bezier(.17,.67,.83,.67) .5s;
+}
+.progress-bar__inner_design.active {
+	width: 95%;
+	opacity: 1;
+}
+.progress-bar__inner_css.active  {
+	width: 85%;
+	opacity: 1;
+}
+.progress-bar__inner_javascript.active  {
+	width: 80%;
+	opacity: 1;
+}

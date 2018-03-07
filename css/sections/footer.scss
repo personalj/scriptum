@@ -1,0 +1,50 @@
+.footer {
+	@include section-background;
+	padding: 45px;
+	&__left {
+		float: left;
+	}
+	&__right {
+		padding-top: 5px;
+		float: right;
+	}
+	.container {
+		@extend %clearfix;
+	}
+	.scroll-top {
+		width: 44px;
+		height: 39px;
+		background: #1a2631;
+		position: relative;
+		cursor: pointer;
+	}
+	.icon_scroll {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.icon_tw, .icon_fb, .icon_be {
+		vertical-align: middle;
+	}
+	.social__item {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 12px;
+	}
+	.social__link:after {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+	.social__list {
+		margin-bottom: 12px;
+	}
+	.copywrite {
+		font-family: 'AktivGrotesk-Light';
+		font-size: .875rem;
+		color: #000000;
+		letter-spacing: 2px;
+	}
+}

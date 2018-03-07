@@ -1,0 +1,38 @@
+@media all and (max-width: 480px) {
+	.header {
+		padding-bottom: 325px;
+	}
+	.nav__icon {
+		width: 25px;
+	}
+	.nav__list {
+		top: 100px;
+	}
+	.nav__icon-wrap {
+		padding: 25px 20px;
+	}
+	.testimonial__text {
+		padding: 80px 15px 0;
+	}
+	.contacts__form-textarea {
+		min-height: auto;
+	}
+	.features__col {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	.features__img, .testimonials__info {
+		height: 100vh;
+		
+	}
+	.features__img-inner, .testimonials__info-inner {
+		border: 0;
+		padding: 0;
+		margin: 0;
+		font-size: 1.5rem;
+		&:after {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.template-features {
+	padding: 145px 60px;
+	@extend %clearfix;
+	&__left, &__middle, &__right {
+		float: left;
+	}
+	&__left, &__right {
+		width: 35%;
+		padding-top: 75px;
+	}
+	&__middle {
+		text-align: center;
+		width: 30%;
+	}
+	&__row {
+		@extend %clearfix;
+		margin-bottom: 33px;
+	}
+	&__icon {
+		display: inline-block;
+		width: 65px;
+		height: 65px;
+		background: url(../img/square_bg.png) 50% 50% no-repeat;
+		position: relative;
+		cursor: pointer;
+	}
+	&__title {
+		font-size: .875rem;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+	&__text {
+		font-family: 'AktivGrotesk-Light';
+		font-size: .9375rem;
+		line-height: 23px;
+		color: $gray-color;
+		letter-spacing: 2px;
+		max-height: 140px;
+		overflow: hidden;
+	}
+	&__elem {
+		float: left;
+		width: 23%;
+		&.text-right {
+			float: right;
+		}
+	}
+	&__item {
+		float: left;
+		width: 77%;
+	}
+}
+.icon_mount, .icon_phone, .icon_eye, .icon_cup  {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

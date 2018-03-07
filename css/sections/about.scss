@@ -1,0 +1,41 @@
+.about {
+	@include section-background;
+	padding: 132px 0;
+	margin-bottom: 35px;
+	&__wrap {
+		@extend %clearfix;
+	}
+	&__img {
+		float: left;
+		width: 57%;
+		img {
+			max-width: 678px;
+			max-height: 473px;
+		}
+	}
+	&__info {
+		padding-top: 45px;
+		float: left;
+		width: 43%;
+	}
+	&__text {
+		  font-family: 'AktivGrotesk-Light';
+		font-size: .9375rem;
+		letter-spacing: 2px;
+		line-height: 23px;
+		color: $gray-color;
+		margin-bottom: 38px;
+
+	}
+	&__link {
+		color: $primary-color;
+		font-size: .8125rem;
+		letter-spacing: 2px;
+		text-shadow: 1px 1px 0 rgba(190, 190, 190, 0.3), 2px 2px 0 rgba(190, 190, 190, 0.3), 3px 3px 0 rgba(190, 190, 190, 0.3), 4px 4px 0 rgba(190, 190, 190, 0.3), 5px 5px 0 rgba(190, 190, 190, 0.3);
+		transition: .3s;
+		&:hover {
+			color: #7bb8db;
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+
+.works {
+	@include section-background;
+	padding: 122px 0 114px;
+	margin-bottom: 35px;
+	.section-title {
+		font-size: 2.3rem;
+		text-align: center;
+		margin-bottom: 52px;
+	}
+	&__list {
+		text-align: center;
+		margin-bottom: 45px;
+	}
+	&__item {
+		display: inline-block;
+		margin-right: 20px;
+		padding-bottom: 10px;
+		position: relative;
+		&:after {
+			content: '';
+			display: none;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: $primary-color;
+		}
+		&.active:after {
+			display: block;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		color: $primary-color;
+		font-size: .75rem;
+		letter-spacing: 2px;
+	}
+}
+.works__grid {
+	@extend %clearfix;
+	&-item {
+		float: left;
+		margin-bottom: 25px;
+		width: 32%;
+	}
+
+}

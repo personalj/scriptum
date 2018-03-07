@@ -1,0 +1,59 @@
+.container {
+	max-width: 1230px;
+}
+.header {
+	position: fixed;
+	top: 40px;
+	width: 100%;
+	padding: 0 30px;
+	&__logo {
+		float: left;
+		width: 20%;
+	}
+	&__right {
+		float: right;
+		width: 80%;
+		padding-top: 15px;
+	}
+	&__info {
+		float: right;
+		margin-left: 45px;
+	}
+}
+.nav {
+	&__list {
+		float: right;
+		padding-top: 3px;
+	}
+	&__item {
+		float: left;
+		margin-left: 25px;
+	}
+	&__item:first-child {
+		margin-left: 0;
+	}
+	&__link {
+		color: #ffffff;
+		font-size: 14px;
+	}
+}
+.hero {
+	padding: 375px 0;
+	background: url('../img/hero.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.icon_basket {
+	width: 18px;
+	height: 24px;
+	background: url(../img/cart.png) 50% 50% no-repeat;
+	display: inline-block;
+}
+.icon_search {
+	width: 24px;
+	height: 24px;
+	background: url(../img/search.png) 50% 50% no-repeat;
+	display: inline-block;
+}
+.icon.icon_search {
+	margin-left: 25px;
+}
